@@ -1,0 +1,108 @@
+body {
+    /*background-color: lightcyan;*/
+    background-color: darkcyan;
+}
+
+h1 {
+    color: cornflowerblue;
+}
+
+nav {
+    position: sticky;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin-bottom: 4%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(31, 178, 170);
+}
+
+nav li {
+    float: left;
+}
+
+nav li:last-child {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.activenav) {
+    background-color: rgb(54, 201, 193);
+}
+
+.activenav {
+    background-color: rgb(54, 201, 193);
+}
+
+/* Create two columns/boxes that floats next to each other */
+.content div {
+    float: left;
+    width: 10%;
+    background: #ccc;
+    padding-left: 20px;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+  
+/* Style the list inside the menu */
+.content div ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.content article {
+    float: left;
+    padding-left: 3%;
+    width: 78%;
+    background-color: #f1f1f1;
+    padding-right: 2%;
+    padding-bottom: 3%;
+}
+  
+/* Clear floats after the columns */
+.content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imgme {
+    float: left;
+    width: 172px;
+    height: 172px;
+    margin-right: 3%;
+}
+
+.projimg {
+    width: 700px;
+    height: 400px;
+}
+
+.projimgoddshaped {
+    width: 40%;
+}
+
+.citymaps {
+    width: 33%;
+}
+
+.distrimg {
+    width: 49%;
+}
+
+#maps {
+    width: 90%;
+}
+
+#citymaplarge {
+    width: 99%;
+}
